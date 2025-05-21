@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mutluluk Endeksim</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happiness Index</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest"></script>
+
+
+
+
 </head>
 <body>
-  <h1>Orhan'ın Mutluluk Endeksi</h1>
-  <canvas id="happinessChart"></canvas>
+  
+  <div class="dashboard">
+  <!-- Sol taraf: büyük grafik -->
+  <div class="chart-section">
+    <h2>Happiness Index Over Time</h2>
+    <canvas id="happinessChart"></canvas>
 
-  <script src="script.js"></script>
+  </div>
+
+  <!-- Sağ taraf: gösterge -->
+  <div class="gauge-section">
+    <h2>Current Mood</h2>
+    <div class="gauge-container">
+      <div class="gauge">
+        <div class="needle" id="needle"></div>
+        <div class="labels">
+          <span>0</span><span>20</span><span>40</span>
+          <span>60</span><span>80</span><span>100</span>
+        </div>
+      </div>
+      <p id="descriptionText">Loading...</p>
+      <p id="indexValue"></p>
+    </div>
+  </div>
+</div>
+<div id="statusMessage" style="margin-top: 20px; font-weight: bold;"></div>
+
+
+
 </body>
 </html>
