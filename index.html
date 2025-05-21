@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mutluluk Endeksi Giriş</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orhan Efe Kocaoğlu - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: #f1f2f6;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
     }
     h1 {
-      color: #2d3436;
+      text-align: center;
+      color: #2c3e50;
     }
-    a {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #0984e3;
-      color: white;
-      text-decoration: none;
+    p.description {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .projects-list {
+      list-style: none;
+      padding: 0;
+    }
+    .projects-list li {
+      background: white;
       border-radius: 8px;
-      font-size: 18px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
     }
-    a:hover {
-      background-color: #74b9ff;
+    .projects-list li:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .project-title {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: #2980b9;
+    }
+    .project-desc {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .project-link {
+      font-weight: bold;
+      color: #27ae60;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .project-link:hover {
+      color: #2ecc71;
     }
   </style>
 </head>
 <body>
-  <h1>Hoş geldin!</h1>
-  <p>Mutluluk Endeksi grafiğini görmek için tıkla:</p>
-  <a href="hapinessintro.html">Grafiğe Git</a>
+  <h1>Orhan Efe Kocaoğlu</h1>
+  <p class="description">Welcome to my personal portfolio site. Here you'll find my projects and experiments.</p>
+  
+  <ul class="projects-list">
+    <li>
+      <div class="project-title">Happiness Index</div>
+      <div class="project-desc">A daily happiness tracking and visualization tool I built.</div>
+      <a href="hapinessintro.html" class="project-link">View Project</a>
+    </li>
+    <!-- Add more projects here -->
+  </ul>
 </body>
 </html>
